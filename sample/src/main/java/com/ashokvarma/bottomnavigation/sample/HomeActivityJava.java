@@ -24,9 +24,6 @@ import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.ashokvarma.bottomnavigation.ShapeBadgeItem;
 import com.ashokvarma.bottomnavigation.TextBadgeItem;
-import com.crashlytics.android.Crashlytics;
-
-import io.fabric.sdk.android.Fabric;
 
 /**
  * Class description
@@ -71,7 +68,7 @@ public class HomeActivityJava extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
+        //Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_home);
 
         bottomNavigationBar = findViewById(R.id.bottom_navigation_bar);
@@ -82,6 +79,7 @@ public class HomeActivityJava extends AppCompatActivity implements View.OnClickL
         shapeSpinner = findViewById(R.id.shape_spinner);
         itemSpinner = findViewById(R.id.item_spinner);
         autoHide = findViewById(R.id.auto_hide);
+
 
         toggleHide = findViewById(R.id.toggle_hide);
         toggleBadge = findViewById(R.id.toggle_badge);

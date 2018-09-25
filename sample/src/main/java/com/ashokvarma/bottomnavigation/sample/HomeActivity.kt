@@ -15,8 +15,8 @@ import com.ashokvarma.bottomnavigation.BottomNavigationBar
 import com.ashokvarma.bottomnavigation.BottomNavigationItem
 import com.ashokvarma.bottomnavigation.ShapeBadgeItem
 import com.ashokvarma.bottomnavigation.TextBadgeItem
-import com.crashlytics.android.Crashlytics
-import io.fabric.sdk.android.Fabric
+//import com.crashlytics.android.Crashlytics
+//import io.fabric.sdk.android.Fabric
 import java.util.*
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener, CompoundButton.OnCheckedChangeListener, BottomNavigationBar.OnTabSelectedListener, AdapterView.OnItemSelectedListener {
@@ -52,7 +52,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener, CompoundButton.O
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Fabric.with(this, Crashlytics())
+        //   Fabric.with(this, Crashlytics())
         setContentView(R.layout.activity_home)
 
         // All lateinit's
